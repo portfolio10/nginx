@@ -1,0 +1,8 @@
+version: "2"
+services:
+  nginx:
+    image: vulhub/nginx:1.13.2
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - "8080:8080"
